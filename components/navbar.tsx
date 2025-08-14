@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo3.png" alt="logo" height={60} width={60}/>
+            <Image src="/logo3.png" alt="logo" height={50} width={50}/>
             <span className="font-serif font-bold text-xl text-white">Hamza Packages</span>
           </Link>
 
