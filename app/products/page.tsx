@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { Share2, Eye } from "lucide-react"
+import { Share2, Eye ,MessageCircle} from "lucide-react"
 
 const products = [
   {
@@ -99,14 +99,21 @@ export default function ProductsPage() {
                         View Details
                       </Link>
                     </Button>
-                    <Button
-                      variant="outline"
-                      onClick={() => handleShare(product)}
-                      className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
-                    >
-                      <Share2 className="h-4 w-4 mr-2" />
-                      Share Product
-                    </Button>
+                   <Button
+  variant="outline"
+  asChild
+  className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
+>
+  <a
+    href={`https://wa.me/923002232290?text=${encodeURIComponent(whatsappMessage(product.title))}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <MessageCircle className="h-4 w-4 mr-2" />
+    Inquiry Now
+  </a>
+</Button>
+
                   </div>
                 </CardContent>
               </Card>
