@@ -148,7 +148,7 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-white max-w-3xl animate-fade-in-up">
-            <h1 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight">
+            <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight">
               {slides[currentSlide].title}
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 text-gray-100">{slides[currentSlide].subtitle}</p>
@@ -195,7 +195,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl text-blue-600 mb-6 sm:mb-8">
+            <h2 className="  font-bold text-2xl sm:text-3xl md:text-4xl text-blue-600 mb-6 sm:mb-8">
               About Hamza Packages
             </h2>
             <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -216,7 +216,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl text-blue-600 mb-4">
+            <h2 className="  font-bold text-2xl sm:text-3xl md:text-4xl text-blue-600 mb-4">
               Industries We Serve
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
@@ -249,7 +249,7 @@ export default function HomePage() {
       <section id="why-choose-us" className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl text-blue-600 mb-4">Why Choose Us</h2>
+            <h2 className="  font-bold text-2xl sm:text-3xl md:text-4xl text-blue-600 mb-4">Why Choose Us</h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
               Experience the difference with our commitment to excellence
             </p>
@@ -280,7 +280,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl text-white mb-4">
+            <h2 className="  font-bold text-3xl sm:text-4xl md:text-5xl text-white mb-4">
               Our Mission & Commitment
             </h2>
             <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">
@@ -296,7 +296,7 @@ export default function HomePage() {
                   <div className="p-4 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 mr-4 group-hover:scale-105 transition-transform duration-300">
                     <Target className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="font-serif font-bold text-2xl sm:text-3xl text-white">Our Mission</h3>
+                  <h3 className="  font-bold text-2xl sm:text-3xl text-white">Our Mission</h3>
                 </div>
                 <div className="space-y-4 text-blue-100">
                   <p className="text-lg leading-relaxed">
@@ -337,7 +337,7 @@ export default function HomePage() {
                   <div className="p-4 rounded-xl bg-gradient-to-br from-blue-600 to-blue-700 mr-4 group-hover:scale-105 transition-transform duration-300">
                     <Leaf className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="font-serif font-bold text-2xl sm:text-3xl text-white">Our Commitment</h3>
+                  <h3 className="  font-bold text-2xl sm:text-3xl text-white">Our Commitment</h3>
                 </div>
                 <div className="space-y-4 text-blue-100">
                   <p className="text-lg leading-relaxed">

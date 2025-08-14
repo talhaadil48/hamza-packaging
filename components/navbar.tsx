@@ -26,7 +26,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image src="/logo3.png" alt="logo" height={50} width={50} />
-            <span className="font-serif font-bold text-xl text-white">Hamza Packages</span>
+            <span className="  font-bold text-xl text-white">Hamza Packages</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -80,7 +80,7 @@ export default function Navbar() {
           <div className="mb-8 pb-4 border-b border-blue-400">
             <div className="flex items-center space-x-2">
               <Image src="/logo3.png" alt="logo" height={40} width={40} />
-              <span className="font-serif font-bold text-lg text-white">Hamza Packages</span>
+              <span className="  font-bold text-lg text-white">Hamza Packages</span>
             </div>
           </div>
 

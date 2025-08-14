@@ -1,9 +1,11 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { MessageCircle, Eye } from "lucide-react"
+import { Share2, Eye } from "lucide-react"
 
 const products = [
   {
@@ -40,14 +42,32 @@ export default function ProductsPage() {
   const whatsappMessage = (productName: string) => {
     return `Hi! I'm interested in learning more about ${productName}. Could you please provide more details?`
   }
+  const handleShare = async (product: { id: string; title: string }) => {
+    const productUrl = `${window.location.origin}/products/${product.id}`
 
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: product.title,
+          text: `Check out this product: ${product.title}`,
+          url: productUrl,
+        })
+      } catch (error) {
+        console.error("Share failed", error)
+      }
+    } else {
+      // Fallback: Copy link to clipboard
+      navigator.clipboard.writeText(productUrl)
+      alert("Product link copied to clipboard!")
+    }
+  }
   return (
     <div className="min-h-screen">
       <Navbar />
 
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-serif font-bold text-4xl md:text-5xl mb-6">Our Products</h1>
+          <h1 className="  font-bold text-4xl md:text-5xl mb-6">Our Products</h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
             Premium custom packaging solutions for every business. From retail to industrial, Hamza Packages delivers
             quality, durability, and customization that meets your exact needs.
@@ -69,7 +89,7 @@ export default function ProductsPage() {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="font-serif font-bold text-xl mb-3 text-gray-900">{product.title}</h3>
+                  <h3 className="  font-bold text-xl mb-3 text-gray-900">{product.title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
 
                   <div className="flex flex-col sm:flex-row gap-3">
@@ -81,17 +101,11 @@ export default function ProductsPage() {
                     </Button>
                     <Button
                       variant="outline"
-                      asChild
+                      onClick={() => handleShare(product)}
                       className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
                     >
-                      <a
-                        href={`https://wa.me/923002232290?text=${encodeURIComponent(whatsappMessage(product.title))}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <MessageCircle className="h-4 w-4 mr-2" />
-                        WhatsApp Share
-                      </a>
+                      <Share2 className="h-4 w-4 mr-2" />
+                      Share Product
                     </Button>
                   </div>
                 </CardContent>

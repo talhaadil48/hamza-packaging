@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   keywords: "poly bags, packaging, LDPE, HDPE, LLDPE, PP bags, custom packaging, Karachi, Pakistan",
     generator: 'v0.app',
     icons : {
-      icon : '/logo3.png'
+      icon : '/logo.webp'
     }
 }
 

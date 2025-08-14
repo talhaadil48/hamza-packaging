@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="space-y-4 text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start space-x-2">
               <Image src="/logo3.png" alt="logo" height={60} width={60} />
-              <span className="font-serif font-bold text-lg sm:text-xl">Hamza Packages</span>
+              <span className="  font-bold text-lg sm:text-xl">Hamza Packages</span>
             </div>
             <p className="text-blue-100 text-sm leading-relaxed">
               Delivering Quality Packaging Solutions Across Industries

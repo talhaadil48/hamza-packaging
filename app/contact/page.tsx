@@ -66,7 +66,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-r from-primary to-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-serif font-bold text-4xl md:text-5xl mb-6">Contact Us</h1>
+          <h1 className="  font-bold text-4xl md:text-5xl mb-6">Contact Us</h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
             Get in touch with us for all your packaging needs. We're here to help you find the perfect solution.
           </p>
@@ -80,7 +80,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <Card>
               <CardContent className="p-8">
-                <h2 className="font-serif font-bold text-2xl mb-6 text-gray-900">Send us a Message</h2>
+                <h2 className="  font-bold text-2xl mb-6 text-gray-900">Send us a Message</h2>
 
                 {submitStatus === "success" && (
                   <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
@@ -165,7 +165,7 @@ export default function ContactPage() {
             {/* Quick Contact Options */}
             <div className="space-y-8">
               <div>
-                <h2 className="font-serif font-bold text-2xl mb-6 text-gray-900">Quick Contact Options</h2>
+                <h2 className="  font-bold text-2xl mb-6 text-gray-900">Quick Contact Options</h2>
                 <p className="text-gray-600 mb-6">
                   Need immediate assistance? Reach out to us directly through these channels.
                 </p>
@@ -188,16 +188,23 @@ export default function ContactPage() {
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-lg mb-4 text-gray-900">Call Now</h3>
                   <p className="text-gray-600 mb-4">Speak directly with our packaging experts</p>
-                  <div className="space-y-2">
-                    <Button variant="outline" asChild className="w-full bg-transparent">
-                      <a href="tel:+923002232290">+92 300 2232290</a>
-                    </Button>
-                    <Button variant="outline" asChild className="w-full bg-transparent">
-                      <a href="tel:+923009239490">+92 300 9239490</a>
-                    </Button>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm font-bold text-blue-500">Founder & CEO: M Saeed</p>
+                      <Button variant="outline" asChild className="w-full bg-transparent mt-1">
+                        <a href="tel:+923002232290">+92 300 9239490</a>
+                      </Button>
+                    </div>
+                    <div>
+                      <p className="text-sm font-bold text-blue-500">Sales Executive: Hamza Bin Saeed</p>
+                      <Button variant="outline" asChild className="w-full bg-transparent mt-1">
+                        <a href="tel:+923009239490">+92 300 2232290</a>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
+
 
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">

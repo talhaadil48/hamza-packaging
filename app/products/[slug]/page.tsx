@@ -108,7 +108,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="font-serif font-bold text-3xl md:text-4xl text-gray-900 mb-6">{product.title}</h1>
+              <h1 className="  font-bold text-3xl md:text-4xl text-gray-900 mb-6">{product.title}</h1>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">{product.description}</p>
               <Button size="lg" asChild>
                 <a
@@ -141,7 +141,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Package className="h-6 w-6 text-primary mr-2" />
-                  <h3 className="font-serif font-bold text-xl">Key Features</h3>
+                  <h3 className="  font-bold text-xl">Key Features</h3>
                 </div>
                 <ul className="space-y-3">
                   {product.features.map((feature, index) => (
@@ -159,7 +159,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Award className="h-6 w-6 text-primary mr-2" />
-                  <h3 className="font-serif font-bold text-xl">Applications</h3>
+                  <h3 className="  font-bold text-xl">Applications</h3>
                 </div>
                 <ul className="space-y-3">
                   {product.applications.map((application, index) => (
@@ -177,7 +177,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Truck className="h-6 w-6 text-primary mr-2" />
-                  <h3 className="font-serif font-bold text-xl">Bulk Order Benefits</h3>
+                  <h3 className="  font-bold text-xl">Bulk Order Benefits</h3>
                 </div>
                 <ul className="space-y-3">
                   {product.benefits.map((benefit, index) => (
@@ -196,7 +196,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif font-bold text-3xl mb-4">Ready to Place Your Order?</h2>
+          <h2 className="  font-bold text-3xl mb-4">Ready to Place Your Order?</h2>
           <p className="text-xl text-blue-100 mb-8">Get in touch with us for competitive pricing and fast delivery</p>
           <Button size="lg" variant="secondary" asChild>
             <a
