@@ -17,11 +17,14 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Hamza Packages - Custom Poly Bag & Film Manufacturer",
+  title: "Hamza Packages",
   description:
     "Premium custom packaging solutions. LDPE, HDPE, LLDPE & PP bags manufactured to your exact specifications. Competitive prices, exceptional service, timely delivery.",
   keywords: "poly bags, packaging, LDPE, HDPE, LLDPE, PP bags, custom packaging, Karachi, Pakistan",
-    generator: 'v0.app'
+    generator: 'v0.app',
+    icons : {
+      icon : '/logo3.png'
+    }
 }
 
 export default function RootLayout({

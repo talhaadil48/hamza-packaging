@@ -46,6 +46,7 @@ export default function ContactPage() {
           message: formData.message,
         }),
       })
+      console.log("EMAIL DONE DONE")
 
       if (!res.ok) throw new Error("Failed to send email")
 
