@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
 import Script from "next/script"
-import AnalyticsTracker from "@/components/analytic-tracker"
 import "./globals.css"
 
 const inter = Inter({
@@ -22,8 +21,7 @@ export const metadata: Metadata = {
   title: "Hamza Packages",
   description:
     "Premium custom packaging solutions. LDPE, HDPE, LLDPE & PP bags manufactured to your exact specifications. Competitive prices, exceptional service, timely delivery.",
-  keywords:
-    "poly bags, packaging, LDPE, HDPE, LLDPE, PP bags, custom packaging, Karachi, Pakistan",
+  keywords: "poly bags, packaging, LDPE, HDPE, LLDPE, PP bags, custom packaging, Karachi, Pakistan",
   generator: "v0.app",
   icons: {
     icon: "/logo.webp",
@@ -58,7 +56,6 @@ export default function RootLayout({
             `,
           }}
         />
-        <AnalyticsTracker />
         {children}
       </body>
     </html>
